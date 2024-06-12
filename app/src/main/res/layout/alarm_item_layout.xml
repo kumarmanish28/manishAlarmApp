@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CardTime_Card"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:padding="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_10sdp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#38448C"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_alarm_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="2024-06-12"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/tv_alarm_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_alarm_date"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="7:58"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_35sdp" />
+
+
+        <ImageView
+            android:id="@+id/iv_delete_alarm"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@drawable/ic_delete_24" />
+
+
+        <TextView
+            android:id="@+id/tv_time_am_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_alarm_date"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/tv_alarm_time"
+            android:text="Am"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_35sdp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_compact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_alarm_date"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:thumb="@drawable/thumb"
+            app:thumbTint="@null"
+            app:track="@drawable/track"
+            app:trackTint="@null" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

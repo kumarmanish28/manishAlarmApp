@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="unchecked_thumb">#BcBcBc</color>
+    <color name="checked_thumb">#FFFFFFFF</color>
+    <color name="unchecked_track">#cdcdcd</color>
+    <color name="checked_track">#7C40DF</color>
+    <color name="blue">#7C40DF</color>
+</resources>

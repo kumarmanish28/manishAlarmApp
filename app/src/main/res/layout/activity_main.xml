@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="@string/alarm_stop_note"
+        android:textSize="@dimen/_15ssp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_below="@id/tv_note"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:backgroundTint="@color/checked_track"
+        android:text="@string/add_alarm"
+        android:textSize="@dimen/_18ssp"
+        app:cornerRadius="@dimen/_12sdp"
+        app:icon="@drawable/ic_alarm_add_24"
+        app:iconSize="@dimen/_28sdp"
+        app:tint="@color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/alarm_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_add_alarm"
+        android:layout_margin="@dimen/_10sdp"
+        android:transitionGroup="true" />
+
+
+</RelativeLayout>

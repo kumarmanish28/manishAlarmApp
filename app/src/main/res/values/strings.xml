@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ManishAlarmAssignment</string>
+    <string name="add_alarm">Add Alarm</string>
+    <string name="alarm_stop_note">Note: Cancel or stop alarm click on toggle button</string>
+</resources>
